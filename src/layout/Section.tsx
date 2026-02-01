@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 
 type ISectionProps = {
+  id?: string;
   title?: string;
   description?: string;
   yPadding?: string;
@@ -8,7 +9,8 @@ type ISectionProps = {
 };
 
 const Section = (props: ISectionProps) => (
-  <div
+  <section
+    id={props.id}
     className={`mx-auto max-w-screen-lg px-3 ${
       props.yPadding ? props.yPadding : 'py-16'
     }`}
@@ -16,7 +18,7 @@ const Section = (props: ISectionProps) => (
     {(props.title || props.description) && (
       <div className="mb-12 text-center">
         {props.title && (
-          <h2 className="text-4xl font-bold text-gray-900">{props.title}</h2>
+          <h2 className="text-4xl font-bold text-navy-700">{props.title}</h2>
         )}
         {props.description && (
           <div className="mt-4 text-xl md:px-20">{props.description}</div>
@@ -25,7 +27,7 @@ const Section = (props: ISectionProps) => (
     )}
 
     {props.children}
-  </div>
+  </section>
 );
 
 export { Section };

@@ -1,0 +1,116 @@
+import Link from 'next/link';
+
+import { Background } from '../background/Background';
+import { FooterCopyright } from '../footer/FooterCopyright';
+import { Section } from '../layout/Section';
+import { Logo } from './Logo';
+
+const SiteFooter = () => (
+  <Background color="bg-navy-700">
+    <Section yPadding="py-12">
+      <div className="grid grid-cols-1 gap-8 text-gray-300 md:grid-cols-4">
+        <div>
+          <div className="mb-4 [&_span]:text-white [&_svg]:text-accent-400">
+            <Logo />
+          </div>
+          <p className="text-sm leading-relaxed">
+            Affordable SEO services that help small businesses rank higher, get
+            more traffic, and grow online.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="mb-4 font-semibold text-white">Services</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/services/#local-seo" className="hover:text-white">
+                Local SEO
+              </Link>
+            </li>
+            <li>
+              <Link href="/services/#on-page-seo" className="hover:text-white">
+                On-Page SEO
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/#technical-seo"
+                className="hover:text-white"
+              >
+                Technical SEO
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/#content-marketing"
+                className="hover:text-white"
+              >
+                Content Marketing
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/#link-building"
+                className="hover:text-white"
+              >
+                Link Building
+              </Link>
+            </li>
+            <li>
+              <Link href="/services/#seo-audits" className="hover:text-white">
+                SEO Audits
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="mb-4 font-semibold text-white">Company</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/about/" className="hover:text-white">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/pricing/" className="hover:text-white">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/" className="hover:text-white">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact/" className="hover:text-white">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="mb-4 font-semibold text-white">Get Started</h3>
+          <p className="mb-4 text-sm">Ready to improve your search rankings?</p>
+          <Link
+            href="/contact/#free-audit"
+            className="inline-block rounded-md bg-accent-500 px-4 py-2 font-semibold text-white hover:bg-accent-600"
+          >
+            Free SEO Audit
+          </Link>
+          <div className="mt-4 space-y-1 text-sm">
+            <p>hello@seoservicesforsmallbiz.com</p>
+            <p>(555) 123-4567</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 border-t border-navy-600 pt-8 text-center text-sm text-gray-400">
+        <FooterCopyright />
+      </div>
+    </Section>
+  </Background>
+);
+
+export { SiteFooter };

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { generateNextSeo } from 'next-seo/pages';
+import type { ReactNode } from 'react';
 
 import { AppConfig } from '../utils/AppConfig';
 
@@ -8,10 +9,16 @@ type IMetaProps = {
   title: string;
   description: string;
   canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  noindex?: boolean;
+  children?: ReactNode;
 };
 
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
+  const ogImage =
+    props.ogImage || `${AppConfig.url}/assets/images/og-default.png`;
 
   return (
     <Head>
@@ -41,6 +48,7 @@ const Meta = (props: IMetaProps) => {
         key="icon16"
       />
       <link rel="icon" href={`${router.basePath}/favicon.ico`} key="favicon" />
+      {props.noindex && <meta name="robots" content="noindex,nofollow" />}
       {generateNextSeo({
         title: props.title,
         description: props.description,
@@ -51,8 +59,11 @@ const Meta = (props: IMetaProps) => {
           url: props.canonical,
           locale: AppConfig.locale,
           site_name: AppConfig.site_name,
+          type: props.ogType || 'website',
+          images: [{ url: ogImage, width: 1200, height: 630 }],
         },
       })}
+      {props.children}
     </Head>
   );
 };

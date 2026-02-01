@@ -4,16 +4,20 @@ type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
   button: ReactNode;
+  secondButton?: ReactNode;
 };
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
   <header className="text-center">
-    <h1 className="whitespace-pre-line text-5xl font-bold leading-hero text-gray-900">
+    <h1 className="whitespace-pre-line text-5xl font-bold leading-hero text-navy-700">
       {props.title}
     </h1>
     <div className="mb-16 mt-4 text-2xl">{props.description}</div>
 
-    {props.button}
+    <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+      {props.button}
+      {props.secondButton}
+    </div>
   </header>
 );
 

@@ -1,5 +1,3 @@
-import { AppConfig } from '../utils/AppConfig';
-
 type ILogoProps = {
   xl?: boolean;
 };
@@ -11,9 +9,9 @@ const Logo = (props: ILogoProps) => {
     : 'font-semibold text-xl';
 
   return (
-    <span className={`inline-flex items-center text-gray-900 ${fontStyle}`}>
+    <span className={`inline-flex items-center text-navy-700 ${fontStyle}`}>
       <svg
-        className="mr-1 stroke-current text-primary-500"
+        className="mr-1 stroke-current text-accent-500"
         xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
@@ -29,8 +27,8 @@ const Logo = (props: ILogoProps) => {
         <rect x="15" y="4" width="6" height="16" rx="1" />
         <path d="M4 20h14" />
       </svg>
-
-      {AppConfig.site_name}
+      SEO
+      <span className="text-accent-500">&nbsp;for Small Biz</span>
     </span>
   );
 };

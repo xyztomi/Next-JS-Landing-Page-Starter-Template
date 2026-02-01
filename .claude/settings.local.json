@@ -6,7 +6,10 @@
       "Bash(npm run lint:*)",
       "Bash(npm install:*)",
       "Bash(npm ls:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(npm run format:*)",
+      "WebSearch"
     ]
   }
 }
