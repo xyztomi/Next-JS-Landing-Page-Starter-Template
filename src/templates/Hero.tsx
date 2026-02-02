@@ -12,7 +12,7 @@ const Hero = () => (
         title={
           <>
             {'Affordable SEO Services\n'}
-            <span className="text-accent">for Small Businesses</span>
+            <span className="text-accent">For Small Businesses</span>
           </>
         }
         description="Drive more organic traffic, rank higher on Google, and grow your small business with proven SEO strategies that fit your budget."
