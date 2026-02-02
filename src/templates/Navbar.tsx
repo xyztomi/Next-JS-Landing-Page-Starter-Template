@@ -11,30 +11,26 @@ const Navbar = () => {
 
   return (
     <Section yPadding="py-4">
-      <div className="flex flex-wrap items-center justify-between">
-        <div>
-          <Link href="/">
-            <Logo xl />
-          </Link>
-        </div>
+      <div className="flex items-center justify-between">
+        <Link href="/">
+          <Logo xl />
+        </Link>
 
         <button
-          className="block sm:hidden"
+          className="block shrink-0 p-2 sm:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation menu"
           type="button"
         >
           {menuOpen ? (
-            <X className="size-8 text-foreground" />
+            <X className="size-6 text-foreground" />
           ) : (
-            <Menu className="size-8 text-foreground" />
+            <Menu className="size-6 text-foreground" />
           )}
         </button>
 
-        <nav
-          className={`${menuOpen ? 'block' : 'hidden'} w-full sm:flex sm:w-auto sm:items-center`}
-        >
-          <ul className="flex flex-col items-center gap-4 pt-4 text-xl font-medium text-foreground sm:flex-row sm:gap-6 sm:pt-0">
+        <nav className="hidden sm:flex sm:items-center">
+          <ul className="flex items-center gap-5 text-base font-medium text-foreground md:gap-6 md:text-lg">
             <li>
               <Link href="/services/">Services</Link>
             </li>
@@ -58,6 +54,33 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
+
+      {menuOpen && (
+        <nav className="border-t border-border pt-3 sm:hidden">
+          <ul className="flex flex-col gap-3 text-base font-medium text-foreground">
+            <li>
+              <Link href="/services/">Services</Link>
+            </li>
+            <li>
+              <Link href="/pricing/">Pricing</Link>
+            </li>
+            <li>
+              <Link href="/about/">About</Link>
+            </li>
+            <li>
+              <Link href="/blog/">Blog</Link>
+            </li>
+            <li>
+              <Link href="/contact/">Contact</Link>
+            </li>
+            <li className="pt-1">
+              <Link href="/contact/#free-audit">
+                <Button>Free SEO Audit</Button>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
     </Section>
   );
 };

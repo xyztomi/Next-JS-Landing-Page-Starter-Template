@@ -67,36 +67,44 @@ const features = [
 
 const renderCell = (value: boolean | string) => {
   if (value === true) {
-    return <Check className="mx-auto size-5 text-accent" />;
+    return <Check className="mx-auto size-4 text-accent sm:size-5" />;
   }
   if (value === false) {
     return <span className="text-gray-300">&mdash;</span>;
   }
-  return <span className="text-sm">{value}</span>;
+  return <span className="text-xs sm:text-sm">{value}</span>;
 };
 
 const PricingTable = () => (
-  <div className="overflow-x-auto">
-    <table className="w-full text-left">
+  <div className="-mx-4 overflow-x-auto sm:mx-0">
+    <table className="w-full min-w-[480px] text-left text-sm sm:text-base">
       <thead>
         <tr className="border-b-2 border-border">
-          <th className="py-3 pr-4 text-foreground">Feature</th>
-          <th className="px-4 py-3 text-center text-foreground">Essentials</th>
-          <th className="px-4 py-3 text-center font-bold text-accent">Pro</th>
-          <th className="px-4 py-3 text-center text-foreground">Growth</th>
+          <th className="py-2 pr-2 text-foreground sm:py-3 sm:pr-4">Feature</th>
+          <th className="p-2 text-center text-foreground sm:px-4 sm:py-3">
+            Essentials
+          </th>
+          <th className="p-2 text-center font-bold text-accent sm:px-4 sm:py-3">
+            Pro
+          </th>
+          <th className="p-2 text-center text-foreground sm:px-4 sm:py-3">
+            Growth
+          </th>
         </tr>
       </thead>
       <tbody>
         {features.map((feature) => (
           <tr key={feature.name} className="border-b border-border/50">
-            <td className="py-3 pr-4 font-medium">{feature.name}</td>
-            <td className="px-4 py-3 text-center">
+            <td className="py-2 pr-2 font-medium sm:py-3 sm:pr-4">
+              {feature.name}
+            </td>
+            <td className="p-2 text-center sm:px-4 sm:py-3">
               {renderCell(feature.essentials)}
             </td>
-            <td className="bg-accent/5 px-4 py-3 text-center">
+            <td className="bg-accent/5 p-2 text-center sm:px-4 sm:py-3">
               {renderCell(feature.pro)}
             </td>
-            <td className="px-4 py-3 text-center">
+            <td className="p-2 text-center sm:px-4 sm:py-3">
               {renderCell(feature.growth)}
             </td>
           </tr>

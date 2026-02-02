@@ -33,12 +33,12 @@ const values = [
 const AboutPage = () => (
   <>
     <Background color="bg-muted">
-      <Section yPadding="pt-20 pb-16">
+      <Section yPadding="pt-12 pb-10 sm:pt-16 md:pt-20 md:pb-16">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-foreground">
+          <h1 className="text-2xl font-bold text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
             About SEO Services for Small Biz
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-2xl text-base text-muted-foreground sm:text-lg md:mt-4 md:text-xl">
             We help small businesses compete online with affordable,
             results-driven SEO strategies.
           </p>
@@ -48,8 +48,10 @@ const AboutPage = () => (
 
     <Section>
       <div className="mx-auto max-w-3xl">
-        <h2 className="mb-6 text-3xl font-bold text-foreground">Our Story</h2>
-        <div className="space-y-4 text-lg text-muted-foreground">
+        <h2 className="mb-4 text-xl font-bold text-foreground sm:text-2xl md:mb-6 md:text-3xl">
+          Our Story
+        </h2>
+        <div className="space-y-4 text-base text-muted-foreground sm:text-lg">
           <p>
             We started because we saw a gap in the market. Most SEO agencies
             cater to enterprise clients with enterprise budgets, leaving small
@@ -72,7 +74,7 @@ const AboutPage = () => (
 
     <Background color="bg-muted">
       <Section title="Our Mission">
-        <p className="mx-auto max-w-3xl text-center text-lg text-muted-foreground">
+        <p className="mx-auto max-w-3xl text-center text-base text-muted-foreground sm:text-lg">
           To make professional SEO accessible and affordable for every small
           business, so they can compete with larger companies in search results
           and grow their business online.
@@ -81,14 +83,16 @@ const AboutPage = () => (
     </Background>
 
     <Section title="Our Values">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
         {values.map((value) => (
           <Card key={value.title}>
-            <CardContent className="p-6">
-              <h3 className="mb-2 text-xl font-semibold text-foreground">
+            <CardContent className="p-5 sm:p-6">
+              <h3 className="mb-2 text-lg font-semibold text-foreground sm:text-xl">
                 {value.title}
               </h3>
-              <p className="text-muted-foreground">{value.description}</p>
+              <p className="text-sm text-muted-foreground sm:text-base">
+                {value.description}
+              </p>
             </CardContent>
           </Card>
         ))}
@@ -97,7 +101,7 @@ const AboutPage = () => (
 
     <Background color="bg-muted">
       <Section title="Our Team">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
           <TeamCard
             name="Alex Rivera"
             role="Founder & SEO Director"
@@ -119,10 +123,10 @@ const AboutPage = () => (
 
     <Section>
       <div className="text-center">
-        <h2 className="mb-4 text-3xl font-bold text-foreground">
+        <h2 className="mb-4 text-xl font-bold text-foreground sm:text-2xl md:text-3xl">
           Ready to Work With Us?
         </h2>
-        <p className="mb-8 text-xl text-muted-foreground">
+        <p className="mb-6 text-base text-muted-foreground sm:text-lg md:mb-8 md:text-xl">
           Let&apos;s discuss how our affordable SEO services can help your small
           business grow.
         </p>

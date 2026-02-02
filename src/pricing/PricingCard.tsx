@@ -32,27 +32,31 @@ const PricingCard = (props: IPricingCardProps) => (
         <Badge>Most Popular</Badge>
       </div>
     )}
-    <CardHeader>
-      <h3 className="text-2xl font-bold text-foreground">{props.name}</h3>
-      <div className="mt-4">
-        <span className="text-4xl font-bold text-foreground">
+    <CardHeader className="p-4 sm:p-6">
+      <h3 className="text-lg font-bold text-foreground sm:text-xl md:text-2xl">
+        {props.name}
+      </h3>
+      <div className="mt-3 sm:mt-4">
+        <span className="text-3xl font-bold text-foreground sm:text-4xl">
           {props.price}
         </span>
         <span className="text-muted-foreground">/mo</span>
       </div>
-      <p className="mt-2 text-muted-foreground">{props.description}</p>
+      <p className="mt-2 text-sm text-muted-foreground sm:text-base">
+        {props.description}
+      </p>
     </CardHeader>
-    <CardContent className="grow">
-      <ul className="space-y-3">
+    <CardContent className="grow p-4 pt-0 sm:p-6 sm:pt-0">
+      <ul className="space-y-2 text-sm sm:space-y-3 sm:text-base">
         {props.features.map((feature) => (
           <li key={feature} className="flex items-start">
-            <Check className="mr-2 mt-1 size-5 shrink-0 text-accent" />
+            <Check className="mr-2 mt-0.5 size-4 shrink-0 text-accent sm:mt-1 sm:size-5" />
             <span>{feature}</span>
           </li>
         ))}
       </ul>
     </CardContent>
-    <CardFooter>
+    <CardFooter className="p-4 sm:p-6">
       <Link href={props.ctaHref || '/contact/#free-audit'} className="w-full">
         <Button xl variant={props.highlighted ? 'primary' : 'outline'}>
           {props.ctaText || 'Get Started'}

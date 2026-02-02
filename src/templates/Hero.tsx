@@ -7,7 +7,7 @@ import { Section } from '../layout/Section';
 
 const Hero = () => (
   <Background color="bg-muted">
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-10 pb-10 sm:pt-16 sm:pb-20 md:pt-20 md:pb-32">
       <HeroOneButton
         title={
           <>

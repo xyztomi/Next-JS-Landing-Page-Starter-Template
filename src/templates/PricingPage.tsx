@@ -35,12 +35,12 @@ const pricingFaqs = [
 const PricingPage = () => (
   <>
     <Background color="bg-muted">
-      <Section yPadding="pt-20 pb-16">
+      <Section yPadding="pt-12 pb-10 sm:pt-16 md:pt-20 md:pb-16">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-foreground">
+          <h1 className="text-2xl font-bold text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
             Affordable SEO Packages for Small Business
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-2xl text-base text-muted-foreground sm:text-lg md:mt-4 md:text-xl">
             Transparent SEO pricing with no long-term contracts. Choose the
             package that fits your budget and watch your business grow.
           </p>
@@ -116,10 +116,10 @@ const PricingPage = () => (
 
     <Section>
       <div className="text-center">
-        <h2 className="mb-4 text-3xl font-bold text-foreground">
+        <h2 className="mb-4 text-xl font-bold text-foreground sm:text-2xl md:text-3xl">
           Not sure which SEO package is right for you?
         </h2>
-        <p className="mb-8 text-xl text-muted-foreground">
+        <p className="mb-6 text-base text-muted-foreground sm:text-lg md:mb-8 md:text-xl">
           Get a free SEO audit and we&apos;ll recommend the best package for
           your small business.
         </p>

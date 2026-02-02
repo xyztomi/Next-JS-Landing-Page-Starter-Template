@@ -7,8 +7,8 @@ import { Logo } from './Logo';
 
 const SiteFooter = () => (
   <Background color="bg-navy-700">
-    <Section yPadding="py-12">
-      <div className="grid grid-cols-1 gap-8 text-gray-300 md:grid-cols-4">
+    <Section yPadding="py-10 md:py-12">
+      <div className="grid grid-cols-1 gap-8 text-gray-300 sm:grid-cols-2 md:grid-cols-4">
         <div>
           <div className="mb-4 [&_span]:text-white [&_svg]:text-accent">
             <Logo />
