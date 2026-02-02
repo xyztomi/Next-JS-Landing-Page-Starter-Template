@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { Card, CardContent } from '@/components/ui/card';
+
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { Section } from '../layout/Section';
@@ -30,13 +32,13 @@ const values = [
 
 const AboutPage = () => (
   <>
-    <Background color="bg-gray-100">
+    <Background color="bg-muted">
       <Section yPadding="pt-20 pb-16">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-navy-700">
+          <h1 className="text-5xl font-bold text-foreground">
             About SEO Services for Small Biz
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600">
+          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             We help small businesses compete online with affordable,
             results-driven SEO strategies.
           </p>
@@ -46,8 +48,8 @@ const AboutPage = () => (
 
     <Section>
       <div className="mx-auto max-w-3xl">
-        <h2 className="mb-6 text-3xl font-bold text-navy-700">Our Story</h2>
-        <div className="space-y-4 text-lg text-gray-600">
+        <h2 className="mb-6 text-3xl font-bold text-foreground">Our Story</h2>
+        <div className="space-y-4 text-lg text-muted-foreground">
           <p>
             We started SEO Services for Small Biz because we saw a gap in the
             market. Most SEO agencies cater to enterprise clients with
@@ -69,9 +71,9 @@ const AboutPage = () => (
       </div>
     </Section>
 
-    <Background color="bg-gray-100">
+    <Background color="bg-muted">
       <Section title="Our Mission">
-        <p className="mx-auto max-w-3xl text-center text-lg text-gray-600">
+        <p className="mx-auto max-w-3xl text-center text-lg text-muted-foreground">
           To make professional SEO accessible and affordable for every small
           business, so they can compete with larger companies in search results
           and grow their business online.
@@ -82,20 +84,19 @@ const AboutPage = () => (
     <Section title="Our Values">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {values.map((value) => (
-          <div
-            key={value.title}
-            className="rounded-lg border border-gray-200 p-6"
-          >
-            <h3 className="mb-2 text-xl font-semibold text-navy-700">
-              {value.title}
-            </h3>
-            <p className="text-gray-600">{value.description}</p>
-          </div>
+          <Card key={value.title}>
+            <CardContent className="p-6">
+              <h3 className="mb-2 text-xl font-semibold text-foreground">
+                {value.title}
+              </h3>
+              <p className="text-muted-foreground">{value.description}</p>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </Section>
 
-    <Background color="bg-gray-100">
+    <Background color="bg-muted">
       <Section title="Our Team">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <TeamCard
@@ -119,10 +120,10 @@ const AboutPage = () => (
 
     <Section>
       <div className="text-center">
-        <h2 className="mb-4 text-3xl font-bold text-navy-700">
+        <h2 className="mb-4 text-3xl font-bold text-foreground">
           Ready to Work With Us?
         </h2>
-        <p className="mb-8 text-xl text-gray-600">
+        <p className="mb-8 text-xl text-muted-foreground">
           Let&apos;s discuss how we can help your small business grow with SEO.
         </p>
         <Link href="/contact/">

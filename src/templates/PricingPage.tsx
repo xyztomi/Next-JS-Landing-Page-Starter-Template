@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { Accordion } from '@/components/ui/accordion';
+
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { FAQItem } from '../faq/FAQItem';
@@ -32,13 +34,13 @@ const pricingFaqs = [
 
 const PricingPage = () => (
   <>
-    <Background color="bg-gray-100">
+    <Background color="bg-muted">
       <Section yPadding="pt-20 pb-16">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-navy-700">
+          <h1 className="text-5xl font-bold text-foreground">
             Affordable SEO Pricing for Small Business
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600">
+          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             Transparent pricing with no long-term contracts. Choose the plan
             that fits your budget and watch your business grow.
           </p>
@@ -91,7 +93,7 @@ const PricingPage = () => (
       </div>
     </Section>
 
-    <Background color="bg-gray-100">
+    <Background color="bg-muted">
       <Section title="Feature Comparison">
         <PricingTable />
       </Section>
@@ -99,22 +101,25 @@ const PricingPage = () => (
 
     <Section title="Pricing FAQ">
       <div className="mx-auto max-w-3xl">
-        {pricingFaqs.map((faq) => (
-          <FAQItem
-            key={faq.question}
-            question={faq.question}
-            answer={faq.answer}
-          />
-        ))}
+        <Accordion type="single" collapsible>
+          {pricingFaqs.map((faq, index) => (
+            <FAQItem
+              key={faq.question}
+              question={faq.question}
+              answer={faq.answer}
+              value={`pricing-faq-${index}`}
+            />
+          ))}
+        </Accordion>
       </div>
     </Section>
 
     <Section>
       <div className="text-center">
-        <h2 className="mb-4 text-3xl font-bold text-navy-700">
+        <h2 className="mb-4 text-3xl font-bold text-foreground">
           Not sure which plan is right for you?
         </h2>
-        <p className="mb-8 text-xl text-gray-600">
+        <p className="mb-8 text-xl text-muted-foreground">
           Get a free SEO audit and we&apos;ll recommend the best plan for your
           business.
         </p>

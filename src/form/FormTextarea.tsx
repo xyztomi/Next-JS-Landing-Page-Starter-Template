@@ -1,3 +1,6 @@
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+
 type IFormTextareaProps = {
   label: string;
   name: string;
@@ -8,20 +11,19 @@ type IFormTextareaProps = {
 
 const FormTextarea = (props: IFormTextareaProps) => (
   <div>
-    <label
+    <Label
       htmlFor={props.name}
-      className="mb-1 block font-medium text-navy-700"
+      className="mb-1 block text-sm font-medium text-foreground"
     >
       {props.label}
-      {props.required && <span className="text-red-500"> *</span>}
-    </label>
-    <textarea
+      {props.required && <span className="text-destructive"> *</span>}
+    </Label>
+    <Textarea
       id={props.name}
       name={props.name}
       required={props.required}
       placeholder={props.placeholder}
       rows={props.rows || 4}
-      className="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-accent-500 focus:outline-none focus:ring-1 focus:ring-accent-500"
     />
   </div>
 );

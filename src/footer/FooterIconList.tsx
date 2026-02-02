@@ -5,28 +5,8 @@ type IFooterIconListProps = {
 };
 
 const FooterIconList = (props: IFooterIconListProps) => (
-  <div className="footer-icon-list flex flex-wrap">
+  <div className="flex flex-wrap [&_a:hover]:text-foreground [&_a:not(:last-child)]:mr-3 [&_a]:text-muted-foreground [&_svg]:size-5 [&_svg]:fill-current">
     {props.children}
-
-    <style jsx>
-      {`
-        .footer-icon-list :global(a:not(:last-child)) {
-          @apply mr-3;
-        }
-
-        .footer-icon-list :global(a) {
-          @apply text-gray-500;
-        }
-
-        .footer-icon-list :global(a:hover) {
-          @apply text-gray-700;
-        }
-
-        .footer-icon-list :global(svg) {
-          @apply fill-current w-5 h-5;
-        }
-      `}
-    </style>
   </div>
 );
 

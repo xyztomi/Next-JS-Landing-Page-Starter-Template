@@ -3,7 +3,7 @@ import { Section } from '../layout/Section';
 import { TestimonialCard } from '../testimonial/TestimonialCard';
 
 const Testimonials = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-muted">
     <Section
       title="What Our Clients Say"
       description="Small business owners love working with us."

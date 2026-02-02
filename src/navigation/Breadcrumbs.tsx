@@ -14,9 +14,9 @@ type IBreadcrumbsProps = {
 const Breadcrumbs = (props: IBreadcrumbsProps) => (
   <Section yPadding="py-4">
     <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-500">
+      <ol className="flex flex-wrap items-center gap-1 text-sm text-muted-foreground">
         <li>
-          <Link href="/" className="hover:text-accent-500">
+          <Link href="/" className="hover:text-accent">
             Home
           </Link>
         </li>
@@ -24,11 +24,11 @@ const Breadcrumbs = (props: IBreadcrumbsProps) => (
           <li key={item.label} className="flex items-center gap-1">
             <span>/</span>
             {item.href ? (
-              <Link href={item.href} className="hover:text-accent-500">
+              <Link href={item.href} className="hover:text-accent">
                 {item.label}
               </Link>
             ) : (
-              <span className="text-gray-700">{item.label}</span>
+              <span className="text-foreground">{item.label}</span>
             )}
           </li>
         ))}

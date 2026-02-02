@@ -59,13 +59,13 @@ const services = [
 
 const ServicesPage = () => (
   <>
-    <Background color="bg-gray-100">
+    <Background color="bg-muted">
       <Section yPadding="pt-20 pb-16">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-navy-700">
+          <h1 className="text-5xl font-bold text-foreground">
             Complete SEO Services for Small Businesses
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600">
+          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             Everything your small business needs to rank higher, drive more
             traffic, and convert visitors into customers.
           </p>

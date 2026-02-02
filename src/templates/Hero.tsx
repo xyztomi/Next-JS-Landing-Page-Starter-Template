@@ -6,13 +6,13 @@ import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-muted">
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={
           <>
             {'Affordable SEO Services\n'}
-            <span className="text-accent-500">for Small Businesses</span>
+            <span className="text-accent">for Small Businesses</span>
           </>
         }
         description="Drive more organic traffic, rank higher on Google, and grow your small business with proven SEO strategies that fit your budget."

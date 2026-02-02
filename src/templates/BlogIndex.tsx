@@ -9,13 +9,13 @@ type IBlogIndexProps = {
 
 const BlogIndex = (props: IBlogIndexProps) => (
   <>
-    <Background color="bg-gray-100">
+    <Background color="bg-muted">
       <Section yPadding="pt-20 pb-16">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-navy-700">
+          <h1 className="text-5xl font-bold text-foreground">
             SEO Tips & Guides for Small Business Owners
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600">
+          <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
             Practical SEO advice to help your small business rank higher and
             grow online.
           </p>

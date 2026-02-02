@@ -10,7 +10,7 @@ const SiteFooter = () => (
     <Section yPadding="py-12">
       <div className="grid grid-cols-1 gap-8 text-gray-300 md:grid-cols-4">
         <div>
-          <div className="mb-4 [&_span]:text-white [&_svg]:text-accent-400">
+          <div className="mb-4 [&_span]:text-white [&_svg]:text-accent">
             <Logo />
           </div>
           <p className="text-sm leading-relaxed">
@@ -95,7 +95,7 @@ const SiteFooter = () => (
           <p className="mb-4 text-sm">Ready to improve your search rankings?</p>
           <Link
             href="/contact/#free-audit"
-            className="inline-block rounded-md bg-accent-500 px-4 py-2 font-semibold text-white hover:bg-accent-600"
+            className="inline-block rounded-md bg-accent px-4 py-2 font-semibold text-accent-foreground hover:bg-accent-600"
           >
             Free SEO Audit
           </Link>

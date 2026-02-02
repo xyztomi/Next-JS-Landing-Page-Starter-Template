@@ -9,7 +9,9 @@
       "Bash(node:*)",
       "Bash(ls:*)",
       "Bash(npm run format:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(npx tsc:*)",
+      "Bash(npx eslint:*)"
     ]
   }
 }

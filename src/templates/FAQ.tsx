@@ -1,3 +1,5 @@
+import { Accordion } from '@/components/ui/accordion';
+
 import { FAQItem } from '../faq/FAQItem';
 import { Section } from '../layout/Section';
 
@@ -40,13 +42,16 @@ const FAQ = () => (
     description="Common questions about our SEO services for small businesses."
   >
     <div className="mx-auto max-w-3xl">
-      {faqs.map((faq) => (
-        <FAQItem
-          key={faq.question}
-          question={faq.question}
-          answer={faq.answer}
-        />
-      ))}
+      <Accordion type="single" collapsible>
+        {faqs.map((faq, index) => (
+          <FAQItem
+            key={faq.question}
+            question={faq.question}
+            answer={faq.answer}
+            value={`faq-${index}`}
+          />
+        ))}
+      </Accordion>
     </div>
   </Section>
 );

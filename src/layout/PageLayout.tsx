@@ -16,7 +16,7 @@ type IPageLayoutProps = {
 };
 
 const PageLayout = (props: IPageLayoutProps) => (
-  <div className="text-gray-600 antialiased">
+  <div className="text-muted-foreground antialiased">
     <Meta
       title={props.title}
       description={props.description}

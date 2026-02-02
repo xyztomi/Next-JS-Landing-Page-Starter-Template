@@ -1,19 +1,8 @@
 import { AppConfig } from '../utils/AppConfig';
 
 const FooterCopyright = () => (
-  <div className="footer-copyright">
-    © Copyright {new Date().getFullYear()} {AppConfig.site_name}.
-    <style jsx>
-      {`
-        .footer-copyright :global(a) {
-          @apply text-accent-400;
-        }
-
-        .footer-copyright :global(a:hover) {
-          @apply underline;
-        }
-      `}
-    </style>
+  <div className="[&_a:hover]:underline [&_a]:text-primary">
+    &copy; Copyright {new Date().getFullYear()} {AppConfig.site_name}.
   </div>
 );
 

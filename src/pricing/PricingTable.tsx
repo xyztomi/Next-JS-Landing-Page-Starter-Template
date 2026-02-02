@@ -1,3 +1,5 @@
+import { Check } from 'lucide-react';
+
 const features = [
   { name: 'SEO Audit & Strategy', starter: true, growth: true, pro: true },
   {
@@ -40,21 +42,7 @@ const features = [
 
 const renderCell = (value: boolean | string) => {
   if (value === true) {
-    return (
-      <svg
-        className="mx-auto size-5 text-accent-500"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M5 13l4 4L19 7"
-        />
-      </svg>
-    );
+    return <Check className="mx-auto size-5 text-accent" />;
   }
   if (value === false) {
     return <span className="text-gray-300">&mdash;</span>;
@@ -66,23 +54,23 @@ const PricingTable = () => (
   <div className="overflow-x-auto">
     <table className="w-full text-left">
       <thead>
-        <tr className="border-b-2 border-gray-200">
-          <th className="py-3 pr-4 text-navy-700">Feature</th>
-          <th className="px-4 py-3 text-center text-navy-700">Starter</th>
-          <th className="px-4 py-3 text-center font-bold text-accent-600">
+        <tr className="border-b-2 border-border">
+          <th className="py-3 pr-4 text-foreground">Feature</th>
+          <th className="px-4 py-3 text-center text-foreground">Starter</th>
+          <th className="px-4 py-3 text-center font-bold text-accent">
             Growth
           </th>
-          <th className="px-4 py-3 text-center text-navy-700">Pro</th>
+          <th className="px-4 py-3 text-center text-foreground">Pro</th>
         </tr>
       </thead>
       <tbody>
         {features.map((feature) => (
-          <tr key={feature.name} className="border-b border-gray-100">
+          <tr key={feature.name} className="border-b border-border/50">
             <td className="py-3 pr-4 font-medium">{feature.name}</td>
             <td className="px-4 py-3 text-center">
               {renderCell(feature.starter)}
             </td>
-            <td className="bg-accent-500/5 px-4 py-3 text-center">
+            <td className="bg-accent/5 px-4 py-3 text-center">
               {renderCell(feature.growth)}
             </td>
             <td className="px-4 py-3 text-center">{renderCell(feature.pro)}</td>
