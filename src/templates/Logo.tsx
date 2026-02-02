@@ -1,34 +1,27 @@
+import { Search, TrendingUp } from 'lucide-react';
+
 type ILogoProps = {
   xl?: boolean;
 };
 
 const Logo = (props: ILogoProps) => {
-  const size = props.xl ? '44' : '32';
-  const fontStyle = props.xl
-    ? 'font-semibold text-3xl'
-    : 'font-semibold text-xl';
+  const iconSize = props.xl ? 22 : 16;
+  const fontStyle = props.xl ? 'font-bold text-3xl' : 'font-bold text-xl';
 
   return (
     <span className={`inline-flex items-center text-foreground ${fontStyle}`}>
-      <svg
-        className="mr-1 stroke-current text-accent"
-        xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M0 0h24v24H0z" stroke="none" />
-        <rect x="3" y="12" width="6" height="8" rx="1" />
-        <rect x="9" y="8" width="6" height="12" rx="1" />
-        <rect x="15" y="4" width="6" height="16" rx="1" />
-        <path d="M4 20h14" />
-      </svg>
-      SEO
-      <span className="text-accent">&nbsp;for Small Biz</span>
+      <span className="relative mr-2 flex items-center justify-center rounded-lg bg-accent p-1.5">
+        <Search className="text-white" size={iconSize} strokeWidth={2.5} />
+        <TrendingUp
+          className="absolute -right-1 -top-1 text-accent"
+          size={iconSize * 0.6}
+          strokeWidth={3}
+        />
+      </span>
+      <span>
+        SEO <span className="font-normal text-muted-foreground">Services</span>
+      </span>
+      <span className="ml-1 text-accent">for Small Biz</span>
     </span>
   );
 };
