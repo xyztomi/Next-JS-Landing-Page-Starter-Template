@@ -11,7 +11,8 @@
       "Bash(npm run format:*)",
       "WebSearch",
       "Bash(npx tsc:*)",
-      "Bash(npx eslint:*)"
+      "Bash(npx eslint:*)",
+      "WebFetch(domain:bestppcfirm.com)"
     ]
   }
 }

@@ -1,42 +1,67 @@
 import { Check } from 'lucide-react';
 
 const features = [
-  { name: 'SEO Audit & Strategy', starter: true, growth: true, pro: true },
   {
-    name: 'Keyword Research',
-    starter: '5 keywords',
-    growth: '15 keywords',
-    pro: '30+ keywords',
+    name: 'Technical SEO Audit',
+    essentials: true,
+    pro: true,
+    growth: true,
   },
-  { name: 'On-Page Optimization', starter: true, growth: true, pro: true },
+  {
+    name: 'On-Page Optimization',
+    essentials: true,
+    pro: true,
+    growth: true,
+  },
+  {
+    name: 'Keyword Targets',
+    essentials: '5 keywords',
+    pro: '10 keywords',
+    growth: '15+ keywords',
+  },
   {
     name: 'Google Business Profile',
-    starter: 'Setup',
-    growth: 'Optimization',
-    pro: 'Full management',
-  },
-  { name: 'Monthly Reporting', starter: true, growth: true, pro: true },
-  {
-    name: 'Content Creation',
-    starter: false,
-    growth: '2 posts/mo',
-    pro: '4 posts/mo',
+    essentials: 'Setup',
+    pro: 'Optimization',
+    growth: 'Full management',
   },
   {
-    name: 'Link Building',
-    starter: false,
-    growth: '5 links/mo',
-    pro: '10 links/mo',
+    name: 'Performance Reports',
+    essentials: 'Monthly',
+    pro: 'Weekly',
+    growth: 'Weekly',
   },
-  { name: 'Technical SEO Fixes', starter: false, growth: true, pro: true },
-  { name: 'Competitor Analysis', starter: false, growth: true, pro: true },
-  { name: 'Advanced Analytics', starter: false, growth: false, pro: true },
-  { name: 'Priority Support', starter: false, growth: false, pro: true },
+  {
+    name: 'Content Strategy & Creation',
+    essentials: false,
+    pro: true,
+    growth: true,
+  },
+  {
+    name: 'Backlink Building & Outreach',
+    essentials: false,
+    pro: true,
+    growth: true,
+  },
   {
     name: 'Dedicated Account Manager',
-    starter: false,
-    growth: false,
+    essentials: false,
     pro: true,
+    growth: true,
+  },
+  { name: 'Competitor Analysis', essentials: false, pro: false, growth: true },
+  {
+    name: 'Advanced Content Creation',
+    essentials: false,
+    pro: false,
+    growth: true,
+  },
+  { name: 'Priority Support', essentials: false, pro: false, growth: true },
+  {
+    name: 'WhatsApp/Slack Support',
+    essentials: false,
+    pro: false,
+    growth: true,
   },
 ];
 
@@ -56,11 +81,9 @@ const PricingTable = () => (
       <thead>
         <tr className="border-b-2 border-border">
           <th className="py-3 pr-4 text-foreground">Feature</th>
-          <th className="px-4 py-3 text-center text-foreground">Starter</th>
-          <th className="px-4 py-3 text-center font-bold text-accent">
-            Growth
-          </th>
-          <th className="px-4 py-3 text-center text-foreground">Pro</th>
+          <th className="px-4 py-3 text-center text-foreground">Essentials</th>
+          <th className="px-4 py-3 text-center font-bold text-accent">Pro</th>
+          <th className="px-4 py-3 text-center text-foreground">Growth</th>
         </tr>
       </thead>
       <tbody>
@@ -68,12 +91,14 @@ const PricingTable = () => (
           <tr key={feature.name} className="border-b border-border/50">
             <td className="py-3 pr-4 font-medium">{feature.name}</td>
             <td className="px-4 py-3 text-center">
-              {renderCell(feature.starter)}
+              {renderCell(feature.essentials)}
             </td>
             <td className="bg-accent/5 px-4 py-3 text-center">
+              {renderCell(feature.pro)}
+            </td>
+            <td className="px-4 py-3 text-center">
               {renderCell(feature.growth)}
             </td>
-            <td className="px-4 py-3 text-center">{renderCell(feature.pro)}</td>
           </tr>
         ))}
       </tbody>

@@ -18,7 +18,7 @@ const steps = [
     number: '3',
     title: 'Grow',
     description:
-      'Watch your rankings climb, organic traffic increase, and leads grow. We provide monthly reports to track progress.',
+      'Watch your rankings climb, organic traffic increase, and leads grow. We provide weekly reports to track progress.',
   },
 ];
 
@@ -26,7 +26,7 @@ const HowItWorks = () => (
   <Background color="bg-muted">
     <Section
       title="How It Works"
-      description="Our proven 3-step process delivers results for small businesses."
+      description="Our proven 3-step SEO process delivers results for small businesses."
     >
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {steps.map((step) => (

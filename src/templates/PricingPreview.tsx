@@ -4,53 +4,53 @@ import { PricingCard } from '../pricing/PricingCard';
 const PricingPreview = () => (
   <Section
     title="Affordable SEO Packages for Small Business"
-    description="Transparent pricing with no long-term contracts. Choose the plan that fits your budget."
+    description="Transparent pricing with no long-term contracts. Month-to-month plans with a 30-day money-back guarantee."
   >
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
       <PricingCard
-        name="Starter"
-        price="$499"
-        description="Perfect for new businesses building their online presence."
+        name="SEO Essentials"
+        price="$697"
+        description="Perfect for small businesses starting their SEO journey."
         features={[
-          'SEO audit & strategy',
-          '5 keyword targets',
+          'Complete technical SEO audit',
           'On-page optimization',
-          'Monthly reporting',
+          '5 keyword targets',
           'Google Business Profile setup',
+          'Monthly ranking reports',
         ]}
-        ctaHref="/pricing/"
-        ctaText="View Details"
+        ctaHref="/contact/#free-audit"
+        ctaText="Get Started"
       />
       <PricingCard
-        name="Growth"
-        price="$999"
-        description="For businesses ready to accelerate their organic growth."
+        name="SEO Pro"
+        price="$997"
+        description="Full-service SEO for small businesses ready to grow."
         features={[
-          'Everything in Starter',
-          '15 keyword targets',
-          'Content creation (2 posts/mo)',
-          'Link building (5 links/mo)',
-          'Technical SEO fixes',
-          'Competitor analysis',
+          'Everything in Essentials',
+          'Content strategy & creation',
+          'Backlink building & outreach',
+          'Ongoing improvements & updates',
+          'Weekly performance reports',
+          'Dedicated account manager',
         ]}
         highlighted
-        ctaHref="/pricing/"
-        ctaText="View Details"
+        ctaHref="/contact/#free-audit"
+        ctaText="Get Started"
       />
       <PricingCard
-        name="Pro"
-        price="$1,999"
-        description="Comprehensive SEO for businesses serious about dominating search."
+        name="SEO Growth"
+        price="$1,497"
+        description="Aggressive SEO for businesses serious about dominating search."
         features={[
-          'Everything in Growth',
-          '30+ keyword targets',
-          'Content creation (4 posts/mo)',
-          'Link building (10 links/mo)',
-          'Advanced analytics',
+          'Everything in Pro',
+          '15+ keyword targets',
+          'Advanced content creation',
+          'Competitor analysis',
           'Priority support',
+          'WhatsApp/Slack support',
         ]}
-        ctaHref="/pricing/"
-        ctaText="View Details"
+        ctaHref="/contact/#free-audit"
+        ctaText="Get Started"
       />
     </div>
   </Section>

@@ -20,7 +20,7 @@ const SiteFooter = () => (
         </div>
 
         <div>
-          <h3 className="mb-4 font-semibold text-white">Services</h3>
+          <h3 className="mb-4 font-semibold text-white">SEO Services</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/services/#local-seo" className="hover:text-white">
@@ -74,7 +74,7 @@ const SiteFooter = () => (
             </li>
             <li>
               <Link href="/pricing/" className="hover:text-white">
-                Pricing
+                SEO Packages
               </Link>
             </li>
             <li>
@@ -86,6 +86,16 @@ const SiteFooter = () => (
               <Link href="/contact/" className="hover:text-white">
                 Contact
               </Link>
+            </li>
+            <li>
+              <a
+                href="https://bestppcfirm.com/case-studies"
+                className="hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Case Studies
+              </a>
             </li>
           </ul>
         </div>
@@ -100,8 +110,8 @@ const SiteFooter = () => (
             Free SEO Audit
           </Link>
           <div className="mt-4 space-y-1 text-sm">
-            <p>hello@seoservicesforsmallbiz.com</p>
-            <p>(555) 123-4567</p>
+            <p>support@bestppcfirm.com</p>
+            <p>+1 (714) 398-8563</p>
           </div>
         </div>
       </div>

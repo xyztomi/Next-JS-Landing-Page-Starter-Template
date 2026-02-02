@@ -9,24 +9,24 @@ import { TeamCard } from '../team/TeamCard';
 
 const values = [
   {
-    title: 'Transparency',
+    title: 'ROI-First Approach',
     description:
-      'No hidden fees, no jargon. We explain everything in plain language and report results honestly.',
+      'Every decision is structured around maximizing your return on investment, not vanity metrics.',
   },
   {
-    title: 'Results-Driven',
+    title: 'Full Transparency',
     description:
-      'We focus on metrics that matter to your business: traffic, leads, and revenue growth.',
+      'Complete account access, live reporting dashboards, and candid communication about performance.',
   },
   {
     title: 'Small Business First',
     description:
-      'Every strategy is designed with small business budgets and goals in mind. No enterprise upselling.',
+      'Every SEO strategy is designed with small business budgets and goals in mind. No enterprise upselling.',
   },
   {
-    title: 'Long-Term Partnerships',
+    title: 'No Long-Term Contracts',
     description:
-      'We build lasting relationships with our clients and invest in their success over time.',
+      'Month-to-month plans with a 30-day money-back guarantee. We earn your business every month.',
   },
 ];
 
@@ -51,20 +51,19 @@ const AboutPage = () => (
         <h2 className="mb-6 text-3xl font-bold text-foreground">Our Story</h2>
         <div className="space-y-4 text-lg text-muted-foreground">
           <p>
-            We started SEO Services for Small Biz because we saw a gap in the
-            market. Most SEO agencies cater to enterprise clients with
-            enterprise budgets, leaving small businesses without access to
-            quality SEO services they can afford.
+            We started because we saw a gap in the market. Most SEO agencies
+            cater to enterprise clients with enterprise budgets, leaving small
+            businesses without access to quality SEO services they can afford.
           </p>
           <p>
-            Our team of SEO specialists has helped over 200 small businesses
-            improve their search rankings and grow their online presence. We
-            understand the unique challenges small businesses face and have
-            built our services specifically to address them.
+            Since 2018, our team of certified SEO specialists has helped over
+            150 small businesses improve their search rankings and grow their
+            online presence. We prioritize profitability over vanity metrics and
+            treat every client&apos;s budget like our own.
           </p>
           <p>
-            From local plumbers and restaurants to online boutiques and
-            professional service firms, we have experience across dozens of
+            From local plumbers and restaurants to law firms, dental practices,
+            and e-commerce stores, we have experience across dozens of
             industries and know what it takes to succeed in competitive markets.
           </p>
         </div>
@@ -102,12 +101,12 @@ const AboutPage = () => (
           <TeamCard
             name="Alex Rivera"
             role="Founder & SEO Director"
-            bio="10+ years of SEO experience. Previously led SEO at a Fortune 500 company before founding SEO Services for Small Biz."
+            bio="10+ years of SEO experience. Previously led digital marketing at a Fortune 500 company before founding SEO Services for Small Biz."
           />
           <TeamCard
             name="Jordan Lee"
             role="Technical SEO Lead"
-            bio="Expert in site architecture, Core Web Vitals, and technical optimization. Certified Google Analytics professional."
+            bio="Expert in site architecture, Core Web Vitals, and technical optimization. Google Analytics 4 certified professional."
           />
           <TeamCard
             name="Sam Patel"
@@ -124,7 +123,8 @@ const AboutPage = () => (
           Ready to Work With Us?
         </h2>
         <p className="mb-8 text-xl text-muted-foreground">
-          Let&apos;s discuss how we can help your small business grow with SEO.
+          Let&apos;s discuss how our affordable SEO services can help your small
+          business grow.
         </p>
         <Link href="/contact/">
           <Button xl>Get in Touch</Button>

@@ -10,21 +10,21 @@ const Testimonials = () => (
     >
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <TestimonialCard
-          quote="Our organic traffic increased by 200% in just 6 months. The team really understands what small businesses need to succeed online."
-          name="Sarah Johnson"
-          business="Johnson's Plumbing"
+          quote="Our cost per lead dropped by 48% in the first month. They finally made our online marketing predictable and affordable."
+          name="Amanda Rivera"
+          business="Rivera & Cole LLP"
           stars={5}
         />
         <TestimonialCard
-          quote="We went from page 5 to the top 3 for our main keywords. The ROI on their SEO services has been incredible for our small business."
-          name="Mike Chen"
-          business="Chen's Family Restaurant"
+          quote="They treat our budget like it's their own. Organic traffic up 240% year over year. Best investment we've made in our small business."
+          name="Jason Park"
+          business="GrowthBox E-commerce"
           stars={5}
         />
         <TestimonialCard
-          quote="Finally, an SEO agency that doesn't charge enterprise prices. They delivered real results for our local bakery within months."
-          name="Emily Davis"
-          business="Sweet Treats Bakery"
+          quote="The landing page optimizations alone paid for the entire engagement. Our conversion rate increased by 156%."
+          name="Sarah Mitchell"
+          business="Velocity Commerce"
           stars={5}
         />
       </div>

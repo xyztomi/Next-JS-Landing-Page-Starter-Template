@@ -13,6 +13,9 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
     },
+    fontFamily: {
+      sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
         border: 'hsl(var(--border))',

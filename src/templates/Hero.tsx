@@ -24,7 +24,7 @@ const Hero = () => (
         secondButton={
           <Link href="/pricing/">
             <Button xl variant="outline">
-              View Packages
+              View SEO Packages
             </Button>
           </Link>
         }

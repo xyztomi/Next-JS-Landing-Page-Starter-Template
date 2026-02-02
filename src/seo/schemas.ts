@@ -9,7 +9,7 @@ export function organizationSchema() {
     description: AppConfig.description,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-555-123-4567',
+      telephone: '+1-714-398-8563',
       contactType: 'customer service',
     },
   };
@@ -22,10 +22,16 @@ export function localBusinessSchema() {
     name: AppConfig.site_name,
     url: AppConfig.url,
     description: AppConfig.description,
-    telephone: '+1-555-123-4567',
-    email: 'hello@seoservicesforsmallbiz.com',
+    telephone: '+1-714-398-8563',
+    email: 'support@bestppcfirm.com',
     priceRange: '$$',
-    openingHours: 'Mo-Fr 09:00-17:00',
+    openingHours: 'Mo-Fr 09:00-18:00',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'San Francisco',
+      addressRegion: 'CA',
+      addressCountry: 'US',
+    },
   };
 }
 
@@ -90,7 +96,12 @@ export function breadcrumbSchema(items: { name: string; url?: string }[]) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: AppConfig.url },
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: AppConfig.url,
+      },
       ...items.map((item, index) => ({
         '@type': 'ListItem' as const,
         position: index + 2,

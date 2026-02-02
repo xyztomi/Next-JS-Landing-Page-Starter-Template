@@ -12,8 +12,8 @@ const ContactPage = () => (
             Contact Us - Get a Free SEO Audit
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-            Have questions about our SEO services? Want a free audit of your
-            website? We&apos;d love to hear from you.
+            Have questions about our SEO services for small businesses? Want a
+            free audit of your website? We&apos;d love to hear from you.
           </p>
         </div>
       </Section>
@@ -28,7 +28,8 @@ const ContactPage = () => (
           <p className="mb-6 text-muted-foreground">
             Enter your website URL below and our team will send you a
             comprehensive SEO audit with actionable recommendations — completely
-            free.
+            free. We&apos;ll respond within 24 hours with your custom SEO
+            strategy.
           </p>
           <AuditForm />
         </div>
@@ -52,21 +53,19 @@ const ContactPage = () => (
             <h3 className="mb-2 text-xl font-semibold text-foreground">
               Email
             </h3>
-            <p className="text-muted-foreground">
-              hello@seoservicesforsmallbiz.com
-            </p>
+            <p className="text-muted-foreground">support@bestppcfirm.com</p>
           </div>
           <div>
             <h3 className="mb-2 text-xl font-semibold text-foreground">
               Phone
             </h3>
-            <p className="text-muted-foreground">(555) 123-4567</p>
+            <p className="text-muted-foreground">+1 (714) 398-8563</p>
           </div>
           <div>
             <h3 className="mb-2 text-xl font-semibold text-foreground">
               Hours
             </h3>
-            <p className="text-muted-foreground">Mon - Fri: 9am - 5pm EST</p>
+            <p className="text-muted-foreground">Mon - Fri: 9am - 6pm PST</p>
           </div>
         </div>
       </Section>

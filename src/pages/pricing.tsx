@@ -4,8 +4,8 @@ import { AppConfig } from '@/utils/AppConfig';
 
 const Pricing = () => (
   <PageLayout
-    title="Affordable SEO Pricing for Small Business - Plans from $499/mo"
-    description="Transparent SEO pricing designed for small businesses. Choose from Starter ($499/mo), Growth ($999/mo), or Pro ($1,999/mo) plans. No long-term contracts."
+    title="Affordable SEO Packages for Small Business - Plans from $697/mo"
+    description="Transparent SEO pricing designed for small businesses. Choose from Essentials ($697/mo), Pro ($997/mo), or Growth ($1,497/mo) packages. No long-term contracts. 30-day money-back guarantee."
     canonical={`${AppConfig.url}/pricing/`}
   >
     <PricingPage />

@@ -4,8 +4,8 @@ import { AppConfig } from '@/utils/AppConfig';
 
 const About = () => (
   <PageLayout
-    title="About SEO Services for Small Biz - Our Story & Team"
-    description="Learn about our mission to make professional SEO accessible and affordable for small businesses. Meet our team of experienced SEO specialists."
+    title="About Us - Affordable SEO for Small Business | SEO Services for Small Biz"
+    description="Learn about our mission to make professional SEO accessible and affordable for small businesses. 150+ clients served. 96% retention rate. 3.5X average ROAS."
     canonical={`${AppConfig.url}/about/`}
   >
     <AboutPage />

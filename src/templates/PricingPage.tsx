@@ -11,9 +11,9 @@ import { PricingTable } from '../pricing/PricingTable';
 
 const pricingFaqs = [
   {
-    question: 'Can I switch plans later?',
+    question: 'Can I switch SEO packages later?',
     answer:
-      'Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.',
+      'Yes, you can upgrade or downgrade your SEO package at any time. Changes take effect at the start of your next billing cycle.',
   },
   {
     question: 'Is there a setup fee?',
@@ -26,9 +26,9 @@ const pricingFaqs = [
       'We accept all major credit cards, ACH bank transfers, and can also invoice for quarterly or annual payments.',
   },
   {
-    question: 'Do you offer custom plans?',
+    question: 'Do you offer custom SEO packages for small businesses?',
     answer:
-      "Yes. If our standard packages don't fit your needs, contact us for a custom plan tailored to your business goals and budget.",
+      "Yes. If our standard SEO packages don't fit your needs, contact us for a custom plan tailored to your business goals and budget.",
   },
 ];
 
@@ -38,11 +38,11 @@ const PricingPage = () => (
       <Section yPadding="pt-20 pb-16">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-foreground">
-            Affordable SEO Pricing for Small Business
+            Affordable SEO Packages for Small Business
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-muted-foreground">
-            Transparent pricing with no long-term contracts. Choose the plan
-            that fits your budget and watch your business grow.
+            Transparent SEO pricing with no long-term contracts. Choose the
+            package that fits your budget and watch your business grow.
           </p>
         </div>
       </Section>
@@ -51,43 +51,43 @@ const PricingPage = () => (
     <Section>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         <PricingCard
-          name="Starter"
-          price="$499"
-          description="Perfect for new businesses building their online presence."
+          name="SEO Essentials"
+          price="$697"
+          description="Perfect for small businesses starting their SEO journey."
           features={[
-            'SEO audit & strategy',
-            '5 keyword targets',
+            'Complete technical SEO audit',
             'On-page optimization',
-            'Monthly reporting',
+            '5 keyword targets',
             'Google Business Profile setup',
+            'Monthly ranking reports',
           ]}
         />
         <PricingCard
-          name="Growth"
-          price="$999"
-          description="For businesses ready to accelerate their organic growth."
+          name="SEO Pro"
+          price="$997"
+          description="Full-service SEO for small businesses ready to grow."
           features={[
-            'Everything in Starter',
-            '15 keyword targets',
-            'Content creation (2 posts/mo)',
-            'Link building (5 links/mo)',
-            'Technical SEO fixes',
-            'Competitor analysis',
+            'Everything in Essentials',
+            'Content strategy & creation',
+            'Backlink building & outreach',
+            'Ongoing improvements & updates',
+            'Weekly performance reports',
+            'Dedicated account manager',
           ]}
           highlighted
         />
         <PricingCard
-          name="Pro"
-          price="$1,999"
-          description="Comprehensive SEO for businesses serious about dominating search."
+          name="SEO Growth"
+          price="$1,497"
+          description="Aggressive SEO for businesses serious about dominating search."
           features={[
-            'Everything in Growth',
-            '30+ keyword targets',
-            'Content creation (4 posts/mo)',
-            'Link building (10 links/mo)',
-            'Advanced analytics',
+            'Everything in Pro',
+            '15+ keyword targets',
+            'Advanced content creation',
+            'Competitor analysis',
             'Priority support',
-            'Dedicated account manager',
+            'WhatsApp/Slack support',
+            '30-day money-back guarantee',
           ]}
         />
       </div>
@@ -117,11 +117,11 @@ const PricingPage = () => (
     <Section>
       <div className="text-center">
         <h2 className="mb-4 text-3xl font-bold text-foreground">
-          Not sure which plan is right for you?
+          Not sure which SEO package is right for you?
         </h2>
         <p className="mb-8 text-xl text-muted-foreground">
-          Get a free SEO audit and we&apos;ll recommend the best plan for your
-          business.
+          Get a free SEO audit and we&apos;ll recommend the best package for
+          your small business.
         </p>
         <Link href="/contact/#free-audit">
           <Button xl>Get Your Free Audit</Button>

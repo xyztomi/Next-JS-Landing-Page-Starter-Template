@@ -22,14 +22,14 @@ const homeFaqs = [
       'Most small businesses start seeing measurable improvements in rankings and traffic within 3-6 months.',
   },
   {
-    question: 'What makes your SEO services affordable for small businesses?',
+    question: 'What makes your SEO packages affordable for small businesses?',
     answer:
-      'We specialize exclusively in small business SEO, which allows us to streamline our processes and offer competitive pricing starting at $499/month.',
+      'We specialize in small business SEO, which allows us to streamline our processes and offer competitive pricing starting at $697/month.',
   },
   {
     question: 'Do I need to sign a long-term contract?',
     answer:
-      'No. We offer month-to-month plans with no long-term contracts required.',
+      'No. We offer month-to-month plans with no long-term contracts and a 30-day money-back guarantee.',
   },
   {
     question: 'What is included in the free SEO audit?',
@@ -39,12 +39,12 @@ const homeFaqs = [
   {
     question: 'Do you work with businesses in my industry?',
     answer:
-      'We have experience with over 50 different industries, from restaurants and law firms to e-commerce stores and home service providers.',
+      'We have experience with over 50 different industries, from law firms and dental practices to e-commerce stores and home service providers.',
   },
   {
     question: 'How do you measure and report on SEO progress?',
     answer:
-      'We provide detailed monthly reports covering keyword rankings, organic traffic, backlink growth, and conversion data.',
+      'We provide detailed weekly reports covering keyword rankings, organic traffic, backlink growth, and conversion data.',
   },
 ];
 
