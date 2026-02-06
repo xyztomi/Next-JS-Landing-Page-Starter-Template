@@ -91,6 +91,45 @@ export function articleSchema(
   };
 }
 
+export function reviewSchema(
+  reviews: {
+    name: string;
+    body: string;
+    ratingValue: number;
+  }[],
+) {
+  const ratings = reviews.map((r) => r.ratingValue);
+  const avg = ratings.reduce((a, b) => a + b, 0) / ratings.length;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: AppConfig.site_name,
+    url: AppConfig.url,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: avg.toFixed(1),
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: reviews.length.toString(),
+    },
+    review: reviews.map((r) => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: r.name,
+      },
+      reviewBody: r.body,
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: r.ratingValue.toString(),
+        bestRating: '5',
+        worstRating: '1',
+      },
+    })),
+  };
+}
+
 export function breadcrumbSchema(items: { name: string; url?: string }[]) {
   return {
     '@context': 'https://schema.org',

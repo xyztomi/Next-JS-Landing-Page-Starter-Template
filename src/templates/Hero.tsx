@@ -11,11 +11,11 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'Affordable SEO Services\n'}
-            <span className="text-accent">For Small Businesses</span>
+            {'Affordable SEO Services for Small Business |\n'}
+            <span className="text-accent">Real Results, Fair Pricing</span>
           </>
         }
-        description="Drive more organic traffic, rank higher on Google, and grow your small business with proven SEO strategies that fit your budget."
+        description="Affordable SEO services for small businesses that drive real traffic, leads, and sales. Transparent pricing, proven strategies, and ROI-focused growth. Get started today."
         button={
           <Link href="/contact/#free-audit">
             <Button xl>Get a Free SEO Audit</Button>

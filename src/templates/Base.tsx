@@ -4,6 +4,7 @@ import {
   faqSchema,
   localBusinessSchema,
   organizationSchema,
+  reviewSchema,
 } from '../seo/schemas';
 import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
@@ -48,6 +49,24 @@ const homeFaqs = [
   },
 ];
 
+const homeReviews = [
+  {
+    name: 'Amanda Rivera',
+    body: 'Our cost per lead dropped by 48% in the first month. They finally made our online marketing predictable and affordable.',
+    ratingValue: 5,
+  },
+  {
+    name: 'Jason Park',
+    body: "They treat our budget like it's their own. Organic traffic up 240% year over year. Best investment we've made in our small business.",
+    ratingValue: 5,
+  },
+  {
+    name: 'Sarah Mitchell',
+    body: 'The landing page optimizations alone paid for the entire engagement. Our conversion rate increased by 156%.',
+    ratingValue: 5,
+  },
+];
+
 const Base = () => (
   <PageLayout
     title={AppConfig.title}
@@ -58,6 +77,7 @@ const Base = () => (
         <JsonLd data={organizationSchema()} />
         <JsonLd data={localBusinessSchema()} />
         <JsonLd data={faqSchema(homeFaqs)} />
+        <JsonLd data={reviewSchema(homeReviews)} />
       </>
     }
   >
