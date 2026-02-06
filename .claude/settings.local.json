@@ -12,7 +12,12 @@
       "WebSearch",
       "Bash(npx tsc:*)",
       "Bash(npx eslint:*)",
-      "WebFetch(domain:bestppcfirm.com)"
+      "WebFetch(domain:bestppcfirm.com)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: add 5 industry-specific blog posts and update logo to use emoji\n\n- Add blog posts for home services, law firms, dentists, real estate, and gyms\n- Each post includes relevant links to bestppcfirm.com services\n- Update Logo component to use emoji instead of lucide-react icons\n- Fix footer grid layout to prevent logo overlap with columns\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: add Tailwind Typography plugin and enhance blog post styling\n\n- Install @tailwindcss/typography for prose styling\n- Add typography plugin to Tailwind config\n- Enhance BlogPost component with better visual hierarchy\n- Add CTA section at the end of blog posts\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
