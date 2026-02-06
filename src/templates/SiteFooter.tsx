@@ -23,41 +23,32 @@ const SiteFooter = () => (
           <h3 className="mb-4 font-semibold text-white">SEO Services</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/services/#local-seo" className="hover:text-white">
+              <Link href="/#local-seo" className="hover:text-white">
                 Local SEO
               </Link>
             </li>
             <li>
-              <Link href="/services/#on-page-seo" className="hover:text-white">
+              <Link href="/#on-page-seo" className="hover:text-white">
                 On-Page SEO
               </Link>
             </li>
             <li>
-              <Link
-                href="/services/#technical-seo"
-                className="hover:text-white"
-              >
+              <Link href="/#technical-seo" className="hover:text-white">
                 Technical SEO
               </Link>
             </li>
             <li>
-              <Link
-                href="/services/#content-marketing"
-                className="hover:text-white"
-              >
+              <Link href="/#content-marketing" className="hover:text-white">
                 Content Marketing
               </Link>
             </li>
             <li>
-              <Link
-                href="/services/#link-building"
-                className="hover:text-white"
-              >
+              <Link href="/#link-building" className="hover:text-white">
                 Link Building
               </Link>
             </li>
             <li>
-              <Link href="/services/#seo-audits" className="hover:text-white">
+              <Link href="/#seo-audits" className="hover:text-white">
                 SEO Audits
               </Link>
             </li>
@@ -73,7 +64,7 @@ const SiteFooter = () => (
               </Link>
             </li>
             <li>
-              <Link href="/pricing/" className="hover:text-white">
+              <Link href="/#pricing" className="hover:text-white">
                 SEO Packages
               </Link>
             </li>

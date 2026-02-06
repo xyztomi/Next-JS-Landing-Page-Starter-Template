@@ -5,8 +5,9 @@ import { TestimonialCard } from '../testimonial/TestimonialCard';
 const Testimonials = () => (
   <Background color="bg-muted">
     <Section
-      title="What Our Clients Say"
-      description="Small business owners love working with us."
+      id="testimonials"
+      title="What Small Business Owners Say About Our SEO Services"
+      description="Real results from real businesses. See why our clients rate us 4.9/5 stars."
     >
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <TestimonialCard

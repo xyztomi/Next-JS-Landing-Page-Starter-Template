@@ -78,4 +78,4 @@ Our home service clients typically see:
 
 Not sure where your business stands? We offer a free SEO audit that shows you exactly where you're losing potential customers and what it takes to fix it.
 
-[Request your free audit](/contact/#free-audit) or [view our affordable SEO packages](/pricing/) designed specifically for home service businesses.
+[Request your free audit](/contact/#free-audit) or [explore our SEO services for small business](/#pricing) designed specifically for home service businesses.

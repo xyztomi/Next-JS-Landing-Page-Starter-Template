@@ -117,4 +117,4 @@ This makes SEO one of the highest-ROI marketing investments a real estate agent 
 
 Want to know how you currently appear in local searches? Our free audit analyzes your online presence and shows you exactly what it takes to attract more buyers and sellers.
 
-[Request your free audit](/contact/#free-audit) or [explore our pricing](/pricing/) for affordable real estate SEO packages.
+[Request your free audit](/contact/#free-audit) or [view our SEO services for small business](/#pricing) for affordable real estate SEO packages.

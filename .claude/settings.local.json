@@ -17,7 +17,17 @@
       "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: add 5 industry-specific blog posts and update logo to use emoji\n\n- Add blog posts for home services, law firms, dentists, real estate, and gyms\n- Each post includes relevant links to bestppcfirm.com services\n- Update Logo component to use emoji instead of lucide-react icons\n- Fix footer grid layout to prevent logo overlap with columns\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git push:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: add Tailwind Typography plugin and enhance blog post styling\n\n- Install @tailwindcss/typography for prose styling\n- Add typography plugin to Tailwind config\n- Enhance BlogPost component with better visual hierarchy\n- Add CTA section at the end of blog posts\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:www.webfx.com)",
+      "WebFetch(domain:www.thirdmarblemarketing.com)",
+      "WebFetch(domain:www.thryv.com)",
+      "WebFetch(domain:loganix.com)",
+      "WebFetch(domain:www.searchbloom.com)",
+      "WebFetch(domain:www.softtrix.com)",
+      "WebFetch(domain:www.infidigit.com)",
+      "WebFetch(domain:seorankmybusiness.com)",
+      "WebFetch(domain:www.seo.com)",
+      "WebFetch(domain:www.caemarketing.com)"
     ]
   }
 }

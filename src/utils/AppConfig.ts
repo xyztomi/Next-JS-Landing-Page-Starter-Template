@@ -1,9 +1,8 @@
 export const AppConfig = {
   site_name: 'SEO Services for Small Biz',
-  title:
-    'Affordable SEO Services for Small Business | Real Results, Fair Pricing',
+  title: 'SEO Services for Small Business | Affordable Packages from $697/mo',
   description:
-    'Affordable SEO services for small businesses that drive real traffic, leads, and sales. Transparent pricing, proven strategies, and ROI-focused growth. Get started today.',
+    'SEO services for small business that drive real results. Affordable packages from $697/mo, 150+ businesses served, 30-day money-back guarantee. Get your free SEO audit today.',
   url: 'https://seoservicesforsmallbiz.com',
   locale: 'en',
 };

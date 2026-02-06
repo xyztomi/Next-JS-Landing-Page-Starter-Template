@@ -7,8 +7,8 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Ready to Grow Your Small Business with SEO?"
-      subtitle="Get a free audit and see how we can help."
+      title="Ready to Get More Customers with SEO?"
+      subtitle="Start with a free SEO audit and see exactly what's holding your small business back."
       button={
         <Link href="/contact/#free-audit">
           <Button>Get Your Free Audit</Button>

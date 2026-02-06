@@ -76,4 +76,4 @@ Our agency clients typically see:
 
 Not sure where your agency stands in search results? We offer a free SEO audit that shows you exactly where the opportunities are and what it takes to outrank your competitors.
 
-[Request your free audit](/contact/#free-audit) or [view our affordable SEO packages](/pricing/) designed for agencies and consultants.
+[Request your free audit](/contact/#free-audit) or [view our small business SEO services](/#pricing) designed for agencies and consultants.

@@ -126,4 +126,4 @@ Worried about competing with Planet Fitness or LA Fitness? Local SEO actually le
 
 Not sure how your gym appears in local search? Our free audit shows you exactly where you stand, what competitors are doing, and what it takes to attract more members.
 
-[Request your free audit](/contact/#free-audit) or [view our pricing](/pricing/) for affordable gym SEO packages.
+[Request your free audit](/contact/#free-audit) or [check out our affordable SEO services](/#pricing) for affordable gym SEO packages.

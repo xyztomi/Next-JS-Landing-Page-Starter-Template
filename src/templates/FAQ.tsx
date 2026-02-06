@@ -3,9 +3,10 @@ import { Accordion } from '@/components/ui/accordion';
 import { FAQItem } from '../faq/FAQItem';
 import { Section } from '../layout/Section';
 
-const faqs = [
+export const faqs = [
   {
-    question: 'How long does it take to see SEO results?',
+    question:
+      'How long does it take to see results from SEO services for small business?',
     answer:
       'Most small businesses start seeing measurable improvements in rankings and traffic within 3-6 months. SEO is a long-term strategy, and results compound over time. We provide weekly reports so you can track progress from day one.',
   },
@@ -34,12 +35,24 @@ const faqs = [
     answer:
       'We provide detailed weekly performance reports covering keyword rankings, organic traffic, backlink growth, and conversion data. You also get a dedicated account manager and WhatsApp/Slack support with under 4-hour response time.',
   },
+  {
+    question:
+      'What is the difference between SEO and paid advertising for small businesses?',
+    answer:
+      'Paid ads deliver immediate traffic but stop the moment you stop paying. SEO builds lasting organic visibility that compounds over time — once you rank, you keep getting traffic without paying per click. For small businesses, SEO typically delivers a higher long-term ROI than paid advertising alone.',
+  },
+  {
+    question: 'How do you choose the right keywords for my small business?',
+    answer:
+      'We combine search volume data, competition analysis, and your business goals to identify keywords with the best ROI potential. We focus on terms your ideal customers are actually searching for, including local and long-tail keywords that are easier to rank for and drive qualified traffic.',
+  },
 ];
 
 const FAQ = () => (
   <Section
-    title="Frequently Asked Questions"
-    description="Common questions about our affordable SEO services for small businesses."
+    id="faq"
+    title="SEO Services for Small Business: Your Questions Answered"
+    description="Common questions about our affordable SEO services and packages for small businesses."
   >
     <div className="mx-auto max-w-3xl">
       <Accordion type="single" collapsible>

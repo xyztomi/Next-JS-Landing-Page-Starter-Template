@@ -130,6 +130,55 @@ export function reviewSchema(
   };
 }
 
+export function serviceOfferingSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'SEO Services for Small Business',
+    description:
+      'Affordable SEO services designed for small businesses. Packages include local SEO, on-page optimization, technical SEO, content marketing, and link building.',
+    url: `${AppConfig.url}/`,
+    provider: {
+      '@type': 'Organization',
+      name: AppConfig.site_name,
+      url: AppConfig.url,
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'United States',
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'SEO Packages for Small Business',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          name: 'SEO Essentials',
+          price: '697',
+          priceCurrency: 'USD',
+          description:
+            'Perfect for small businesses starting their SEO journey.',
+        },
+        {
+          '@type': 'Offer',
+          name: 'SEO Pro',
+          price: '997',
+          priceCurrency: 'USD',
+          description: 'Full-service SEO for small businesses ready to grow.',
+        },
+        {
+          '@type': 'Offer',
+          name: 'SEO Growth',
+          price: '1497',
+          priceCurrency: 'USD',
+          description:
+            'Aggressive SEO for businesses serious about dominating search.',
+        },
+      ],
+    },
+  };
+}
+
 export function breadcrumbSchema(items: { name: string; url?: string }[]) {
   return {
     '@context': 'https://schema.org',

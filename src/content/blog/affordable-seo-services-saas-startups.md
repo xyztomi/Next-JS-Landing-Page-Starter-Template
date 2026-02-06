@@ -77,4 +77,4 @@ Our SaaS clients typically see:
 
 Not sure where your startup stands in organic search? We offer a free SEO audit that shows you the biggest ranking opportunities and what it takes to capture them.
 
-[Request your free audit](/contact/#free-audit) or [view our affordable SEO packages](/pricing/) built for SaaS startups and tech companies.
+[Request your free audit](/contact/#free-audit) or [check out our SEO services](/#pricing) built for SaaS startups and tech companies.

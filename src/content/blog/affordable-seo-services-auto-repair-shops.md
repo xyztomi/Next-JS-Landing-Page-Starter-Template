@@ -78,4 +78,4 @@ Our auto service clients typically see:
 
 Not sure how your shop ranks against local competitors? We offer a free SEO audit that shows exactly where you're missing out on potential customers and what to fix first.
 
-[Request your free audit](/contact/#free-audit) or [view our affordable SEO packages](/pricing/) built for auto service businesses.
+[Request your free audit](/contact/#free-audit) or [see our affordable SEO services](/#pricing) built for auto service businesses.

@@ -95,4 +95,4 @@ Our law firm clients typically experience:
 
 Wondering how your firm's online presence stacks up? Our free audit analyzes your current visibility, identifies gaps, and shows you exactly what's needed to attract more case leads.
 
-[Request your free audit](/contact/#free-audit) or [explore our pricing](/pricing/) for affordable law firm SEO packages.
+[Request your free audit](/contact/#free-audit) or [explore our SEO packages](/#pricing) for affordable law firm SEO packages.

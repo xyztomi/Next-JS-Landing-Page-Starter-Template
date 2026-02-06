@@ -6,27 +6,28 @@ const steps = [
     number: '1',
     title: 'Audit',
     description:
-      'We start with a comprehensive SEO audit to identify opportunities, technical issues, and quick wins for your website.',
+      'We start with a comprehensive SEO audit that evaluates your technical foundation, keyword opportunities, competitor landscape, and quick wins. Every new client receives this as part of our SEO packages for small business.',
   },
   {
     number: '2',
     title: 'Optimize',
     description:
-      'Our team implements on-page optimization, fixes technical issues, creates content, and builds quality backlinks.',
+      'Our team implements on-page SEO, resolves technical issues, creates keyword-targeted content, and builds quality backlinks — all the affordable SEO services your small business needs to climb the rankings.',
   },
   {
     number: '3',
     title: 'Grow',
     description:
-      'Watch your rankings climb, organic traffic increase, and leads grow. We provide weekly reports to track progress.',
+      'Watch your rankings climb with weekly progress reports. Our small business SEO clients see measurable improvements within 3-6 months, with results compounding over time.',
   },
 ];
 
 const HowItWorks = () => (
   <Background color="bg-muted">
     <Section
-      title="How It Works"
-      description="Our proven 3-step SEO process delivers results for small businesses."
+      id="how-it-works"
+      title="How Our Small Business SEO Process Works"
+      description="Our proven 3-step methodology has delivered results for 150+ small businesses across 50+ industries."
     >
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {steps.map((step) => (

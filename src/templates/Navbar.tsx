@@ -32,10 +32,10 @@ const Navbar = () => {
         <nav className="hidden sm:flex sm:items-center">
           <ul className="flex items-center gap-5 text-base font-medium text-foreground md:gap-6 md:text-lg">
             <li>
-              <Link href="/services/">Services</Link>
+              <Link href="/#services">Services</Link>
             </li>
             <li>
-              <Link href="/pricing/">Pricing</Link>
+              <Link href="/#pricing">Pricing</Link>
             </li>
             <li>
               <Link href="/about/">About</Link>
@@ -59,10 +59,10 @@ const Navbar = () => {
         <nav className="border-t border-border pt-3 sm:hidden">
           <ul className="flex flex-col gap-3 text-base font-medium text-foreground">
             <li>
-              <Link href="/services/">Services</Link>
+              <Link href="/#services">Services</Link>
             </li>
             <li>
-              <Link href="/pricing/">Pricing</Link>
+              <Link href="/#pricing">Pricing</Link>
             </li>
             <li>
               <Link href="/about/">About</Link>

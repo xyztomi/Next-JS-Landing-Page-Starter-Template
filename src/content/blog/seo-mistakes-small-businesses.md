@@ -74,4 +74,4 @@ SEO is a long-term strategy. Some businesses give up after a month or two becaus
 
 Avoiding these mistakes will put your small business ahead of most competitors. If you want professional help identifying and fixing SEO issues on your website, [get your free SEO audit](/contact/#free-audit) today.
 
-Looking for ongoing SEO support? Check out our [affordable SEO packages](/pricing/) designed specifically for small businesses.
+Looking for ongoing SEO support? Check out our [SEO packages for small business](/#pricing) designed specifically for small businesses.

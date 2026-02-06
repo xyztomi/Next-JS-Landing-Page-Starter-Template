@@ -78,4 +78,4 @@ Our restaurant clients typically see:
 
 Want to know how your restaurant ranks against nearby competitors? We offer a free SEO audit that reveals exactly where you're losing potential diners and what to do about it.
 
-[Request your free audit](/contact/#free-audit) or [view our affordable SEO packages](/pricing/) designed for restaurants and food businesses.
+[Request your free audit](/contact/#free-audit) or [view our SEO packages for small business](/#pricing) designed for restaurants and food businesses.

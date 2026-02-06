@@ -70,4 +70,4 @@ Track these metrics to measure your local SEO progress:
 
 ## Getting Professional Help
 
-Local SEO can be complex, especially in competitive markets. If you'd like professional help optimizing your local presence, [check out our local SEO services](/services/#local-seo) or [request a free audit](/contact/#free-audit).
+Local SEO can be complex, especially in competitive markets. If you'd like professional help optimizing your local presence, [check out our local SEO services](/#local-seo) or [request a free audit](/contact/#free-audit).

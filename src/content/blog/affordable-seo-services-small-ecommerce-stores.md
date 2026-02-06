@@ -76,4 +76,4 @@ Our ecommerce clients typically see:
 
 Not sure how your store stacks up? We offer a free SEO audit that reveals missed opportunities and shows you exactly how to start ranking for the keywords your customers are searching.
 
-[Request your free audit](/contact/#free-audit) or [view our affordable SEO packages](/pricing/) built for small ecommerce stores.
+[Request your free audit](/contact/#free-audit) or [see our small business SEO packages](/#pricing) built for small ecommerce stores.

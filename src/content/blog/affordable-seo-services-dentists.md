@@ -105,4 +105,4 @@ Competitive markets require more effort but also have more patients searching. O
 
 Not sure where your practice stands online? Our free audit shows you exactly how you appear in local search, what your competitors are doing, and what it takes to attract more patients.
 
-[Request your free audit](/contact/#free-audit) or [view our dental SEO packages](/pricing/).
+[Request your free audit](/contact/#free-audit) or [see our affordable SEO packages](/#pricing).
