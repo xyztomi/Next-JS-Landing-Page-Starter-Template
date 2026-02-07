@@ -50,8 +50,8 @@ const PricingPreview = () => (
             'Google Business Profile setup',
             'Monthly ranking reports',
           ]}
-          ctaHref="/contact/#free-audit"
-          ctaText="Get Started"
+          ctaHref="/checkout/?plan=essentials"
+          ctaText="Buy Now"
         />
         <PricingCard
           name="SEO Pro"
@@ -66,8 +66,8 @@ const PricingPreview = () => (
             'Dedicated account manager',
           ]}
           highlighted
-          ctaHref="/contact/#free-audit"
-          ctaText="Get Started"
+          ctaHref="/checkout/?plan=pro"
+          ctaText="Buy Now"
         />
         <PricingCard
           name="SEO Growth"
@@ -81,8 +81,8 @@ const PricingPreview = () => (
             'Priority support',
             'WhatsApp/Slack support',
           ]}
-          ctaHref="/contact/#free-audit"
-          ctaText="Get Started"
+          ctaHref="/checkout/?plan=growth"
+          ctaText="Buy Now"
         />
       </div>
     </Section>
