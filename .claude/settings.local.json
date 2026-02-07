@@ -37,7 +37,8 @@
       "Bash(grep:*)",
       "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz remote:*)",
       "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz branch:*)",
-      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz log --all --oneline)"
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz log --all --oneline)",
+      "Bash(git rm:*)"
     ]
   }
 }
