@@ -11,18 +11,19 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setStatus('submitting');
 
     try {
       const response = await fetch('https://formspree.io/f/xqedzkbn', {
         method: 'POST',
         headers: { Accept: 'application/json' },
-        body: new FormData(e.currentTarget),
+        body: new FormData(form),
       });
 
       if (response.ok) {
         setStatus('success');
-        e.currentTarget.reset();
+        form.reset();
       } else {
         setStatus('error');
       }
