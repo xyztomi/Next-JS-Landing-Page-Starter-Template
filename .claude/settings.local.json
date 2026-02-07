@@ -27,7 +27,17 @@
       "WebFetch(domain:www.infidigit.com)",
       "WebFetch(domain:seorankmybusiness.com)",
       "WebFetch(domain:www.seo.com)",
-      "WebFetch(domain:www.caemarketing.com)"
+      "WebFetch(domain:www.caemarketing.com)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz diff)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz add:*)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz commit -m \"$\\(cat <<''EOF''\nfix: save form ref before await to prevent null currentTarget error\n\ne.currentTarget is nullified by the DOM after the event handler returns\nsynchronously, so accessing it after an await throws a TypeError caught\nby the error handler — showing an error message despite a 200 OK response.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz push)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz show 9997576 --stat)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz show 9997576)",
+      "Bash(grep:*)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz remote:*)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz branch:*)",
+      "Bash(git -C /Users/tomi/code/node/seoservicesforsmallbiz log --all --oneline)"
     ]
   }
 }
