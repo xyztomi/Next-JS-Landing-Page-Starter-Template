@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://seoservicesforsmallbiz.com
-
-# Sitemaps
-Sitemap: https://seoservicesforsmallbiz.com/sitemap.xml
