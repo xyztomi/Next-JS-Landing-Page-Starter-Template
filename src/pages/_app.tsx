@@ -1,8 +1,8 @@
 import '../styles/global.css';
 
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,18 +11,7 @@ const inter = Inter({
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <div className={`${inter.variable} font-sans`}>
-    <Script
-      src="https://www.googletagmanager.com/gtag/js?id=G-EJST3J8J6X"
-      strategy="afterInteractive"
-    />
-    <Script id="google-analytics" strategy="afterInteractive">
-      {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-EJST3J8J6X');
-      `}
-    </Script>
+    <GoogleAnalytics gaId="G-MQN3EXMBB9" />
     <Component {...pageProps} />
   </div>
 );
