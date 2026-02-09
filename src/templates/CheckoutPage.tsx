@@ -31,6 +31,9 @@ const PaymentForm = ({ price }: { price: string }) => {
   const elements = useElements();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
@@ -44,6 +47,13 @@ const PaymentForm = ({ price }: { price: string }) => {
         elements,
         confirmParams: {
           return_url: `${window.location.origin}/checkout/success/`,
+          payment_method_data: {
+            billing_details: {
+              name,
+              email,
+              phone,
+            },
+          },
         },
       });
 
@@ -55,11 +65,65 @@ const PaymentForm = ({ price }: { price: string }) => {
       }
       setLoading(false);
     },
-    [stripe, elements],
+    [stripe, elements, name, email, phone],
   );
 
   return (
     <form onSubmit={handleSubmit}>
+      <div className="mb-6 space-y-4">
+        <div>
+          <label
+            htmlFor="name"
+            className="mb-1 block text-sm font-medium text-foreground"
+          >
+            Full Name
+          </label>
+          <input
+            id="name"
+            type="text"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="John Smith"
+            className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="email"
+            className="mb-1 block text-sm font-medium text-foreground"
+          >
+            Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="john@example.com"
+            className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="phone"
+            className="mb-1 block text-sm font-medium text-foreground"
+          >
+            Phone
+          </label>
+          <input
+            id="phone"
+            type="tel"
+            required
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            placeholder="+1 (555) 123-4567"
+            className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+          />
+        </div>
+      </div>
+
       <PaymentElement />
 
       {error && <p className="mt-4 text-sm text-red-600">{error}</p>}

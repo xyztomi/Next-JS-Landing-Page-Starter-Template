@@ -38,6 +38,23 @@ const PricingPreview = () => (
       title="Low-Cost SEO Packages Built for Small Business Budgets"
       description="Transparent pricing with no long-term contracts. Every plan includes a 30-day money-back guarantee. Choose the affordable SEO package that fits your small business."
     >
+      <div className="mb-8 flex justify-center">
+        <span className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-2 text-sm font-medium text-green-800">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="size-4"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clipRule="evenodd"
+            />
+          </svg>
+          Guaranteed Google Rankings Improvement — Or Your Money Back
+        </span>
+      </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         <PricingCard
           name="SEO Essentials"
