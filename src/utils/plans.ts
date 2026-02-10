@@ -44,6 +44,14 @@ export const plans = {
       'WhatsApp/Slack support',
     ],
   },
+  test: {
+    name: 'Test Plan',
+    price: '$1',
+    amountInCents: 100,
+    priceId: 'price_1SzKkNFKez6q7wlYBJC7No9F',
+    description: 'Test plan for verifying the checkout flow.',
+    features: ['Test purchase'],
+  },
 } as const;
 
 export type PlanKey = keyof typeof plans;
