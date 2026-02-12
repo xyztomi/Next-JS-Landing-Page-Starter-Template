@@ -10,10 +10,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Section yPadding="py-4">
+    <Section yPadding="py-3">
       <div className="flex items-center justify-between">
-        <Link href="/">
-          <Logo xl />
+        <Link href="/" className="shrink-0">
+          <Logo />
         </Link>
 
         <button
@@ -30,23 +30,23 @@ const Navbar = () => {
         </button>
 
         <nav className="hidden sm:flex sm:items-center">
-          <ul className="flex items-center gap-5 text-base font-medium text-foreground md:gap-6 md:text-lg">
-            <li>
+          <ul className="flex items-center gap-4 text-sm font-medium text-muted-foreground md:gap-6 md:text-base">
+            <li className="transition-colors hover:text-foreground">
               <Link href="/#services">Services</Link>
             </li>
-            <li>
+            <li className="transition-colors hover:text-foreground">
               <Link href="/#pricing">Pricing</Link>
             </li>
-            <li>
+            <li className="transition-colors hover:text-foreground">
               <Link href="/about/">About</Link>
             </li>
-            <li>
+            <li className="transition-colors hover:text-foreground">
               <Link href="/blog/">Blog</Link>
             </li>
-            <li>
+            <li className="transition-colors hover:text-foreground">
               <Link href="/reviews/">Reviews</Link>
             </li>
-            <li>
+            <li className="transition-colors hover:text-foreground">
               <Link href="/contact/">Contact</Link>
             </li>
             <li>
