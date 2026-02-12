@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { generateNextSeo } from 'next-seo/pages';
 import type { ReactNode } from 'react';
 
@@ -16,7 +15,6 @@ type IMetaProps = {
 };
 
 const Meta = (props: IMetaProps) => {
-  const router = useRouter();
   const ogImage =
     props.ogImage || `${AppConfig.url}/assets/images/og-default.png`;
 
@@ -31,10 +29,9 @@ const Meta = (props: IMetaProps) => {
       <link
         rel="icon"
         type="image/svg+xml"
-        href={`${router.basePath}/favicon.svg`}
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>📈</text></svg>"
         key="favicon-svg"
       />
-      <link rel="icon" href={`${router.basePath}/favicon.ico`} key="favicon" />
       {props.noindex && <meta name="robots" content="noindex,nofollow" />}
       {generateNextSeo({
         title: props.title,
