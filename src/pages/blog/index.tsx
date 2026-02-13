@@ -8,6 +8,7 @@ import { getAllPosts } from '@/utils/blog';
 
 type IBlogPageProps = {
   posts: BlogPostMeta[];
+  recentPosts: BlogPostMeta[];
 };
 
 const Blog = (props: IBlogPageProps) => (
@@ -15,6 +16,7 @@ const Blog = (props: IBlogPageProps) => (
     title="SEO Tips & Guides for Small Business Owners | SEO Services for Small Biz"
     description="Practical SEO tips, guides, and strategies to help small business owners improve their search rankings and grow online."
     canonical={`${AppConfig.url}/blog/`}
+    recentPosts={props.recentPosts}
   >
     <BlogIndex posts={props.posts} />
   </PageLayout>
@@ -22,7 +24,8 @@ const Blog = (props: IBlogPageProps) => (
 
 export const getStaticProps: GetStaticProps<IBlogPageProps> = () => {
   const posts = getAllPosts();
-  return { props: { posts } };
+  const recentPosts = posts.slice(0, 5);
+  return { props: { posts, recentPosts } };
 };
 
 export default Blog;

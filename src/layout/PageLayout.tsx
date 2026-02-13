@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 
 import { Navbar } from '../templates/Navbar';
 import { SiteFooter } from '../templates/SiteFooter';
+import type { BlogPostMeta } from '../utils/blog';
 import { Meta } from './Meta';
 
 type IPageLayoutProps = {
@@ -13,6 +14,7 @@ type IPageLayoutProps = {
   noindex?: boolean;
   children: ReactNode;
   jsonLd?: ReactNode;
+  recentPosts?: BlogPostMeta[];
 };
 
 const PageLayout = (props: IPageLayoutProps) => (
@@ -29,7 +31,7 @@ const PageLayout = (props: IPageLayoutProps) => (
     </Meta>
     <Navbar />
     {props.children}
-    <SiteFooter />
+    <SiteFooter recentPosts={props.recentPosts} />
   </div>
 );
 

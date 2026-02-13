@@ -6,11 +6,12 @@ import { JsonLd } from '@/seo/JsonLd';
 import { articleSchema, breadcrumbSchema } from '@/seo/schemas';
 import { BlogPost } from '@/templates/BlogPost';
 import { AppConfig } from '@/utils/AppConfig';
-import type { BlogPost as IBlogPostData } from '@/utils/blog';
-import { getAllPosts, getPostBySlug } from '@/utils/blog';
+import type { BlogPost as IBlogPostData, BlogPostMeta } from '@/utils/blog';
+import { getAllPosts, getPostBySlug, getRecentPosts } from '@/utils/blog';
 
 type IBlogPostPageProps = {
   post: IBlogPostData;
+  recentPosts: BlogPostMeta[];
 };
 
 const BlogPostPage = (props: IBlogPostPageProps) => (
@@ -19,6 +20,7 @@ const BlogPostPage = (props: IBlogPostPageProps) => (
     description={props.post.description}
     canonical={`${AppConfig.url}/blog/${props.post.slug}/`}
     ogType="article"
+    recentPosts={props.recentPosts}
     jsonLd={
       <>
         <JsonLd
@@ -59,7 +61,8 @@ export const getStaticProps: GetStaticProps<IBlogPostPageProps> = async (
 ) => {
   const slug = (context.params?.slug as string) || '';
   const post = await getPostBySlug(slug);
-  return { props: { post } };
+  const recentPosts = getRecentPosts(5);
+  return { props: { post, recentPosts } };
 };
 
 export default BlogPostPage;

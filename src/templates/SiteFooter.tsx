@@ -3,9 +3,14 @@ import Link from 'next/link';
 import { Background } from '../background/Background';
 import { FooterCopyright } from '../footer/FooterCopyright';
 import { Section } from '../layout/Section';
+import type { BlogPostMeta } from '../utils/blog';
 import { Logo } from './Logo';
 
-const SiteFooter = () => (
+type ISiteFooterProps = {
+  recentPosts?: BlogPostMeta[];
+};
+
+const SiteFooter = (props: ISiteFooterProps) => (
   <Background color="bg-navy-700">
     <Section yPadding="py-10 md:py-12">
       <div className="grid grid-cols-1 gap-8 text-gray-300 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
@@ -106,6 +111,24 @@ const SiteFooter = () => (
           </div>
         </div>
       </div>
+
+      {props.recentPosts && props.recentPosts.length > 0 && (
+        <div className="mt-8 border-t border-navy-600 pt-8">
+          <h3 className="mb-4 font-semibold text-white">Recent Blog Posts</h3>
+          <ul className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-2 lg:grid-cols-5">
+            {props.recentPosts.map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/blog/${post.slug}/`}
+                  className="text-gray-300 hover:text-white"
+                >
+                  {post.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <div className="mt-8 border-t border-navy-600 pt-8 text-center text-sm text-gray-400">
         <FooterCopyright />

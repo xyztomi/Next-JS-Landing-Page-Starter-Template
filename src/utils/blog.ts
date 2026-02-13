@@ -18,6 +18,10 @@ export type BlogPost = {
 
 export type BlogPostMeta = Omit<BlogPost, 'content'>;
 
+export function getRecentPosts(count: number = 5): BlogPostMeta[] {
+  return getAllPosts().slice(0, count);
+}
+
 export function getAllPosts(): BlogPostMeta[] {
   const filenames = fs.readdirSync(postsDirectory);
   const posts = filenames

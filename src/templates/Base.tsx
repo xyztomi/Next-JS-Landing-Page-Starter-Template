@@ -8,6 +8,7 @@ import {
   serviceOfferingSchema,
 } from '../seo/schemas';
 import { AppConfig } from '../utils/AppConfig';
+import type { BlogPostMeta } from '../utils/blog';
 import { Banner } from './Banner';
 import { FAQ, faqs } from './FAQ';
 import { Hero } from './Hero';
@@ -35,11 +36,16 @@ const homeReviews = [
   },
 ];
 
-const Base = () => (
+type IBaseProps = {
+  recentPosts?: BlogPostMeta[];
+};
+
+const Base = (props: IBaseProps) => (
   <PageLayout
     title={AppConfig.title}
     description={AppConfig.description}
     canonical={`${AppConfig.url}/`}
+    recentPosts={props.recentPosts}
     jsonLd={
       <>
         <JsonLd data={organizationSchema()} />
