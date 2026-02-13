@@ -130,6 +130,35 @@ const SiteFooter = (props: ISiteFooterProps) => (
         </div>
       )}
 
+      <div className="mt-8 border-t border-navy-600 pt-8">
+        <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-white">
+          Our SEO Network
+        </h3>
+        <div className="flex flex-wrap gap-3">
+          {[
+            { label: 'SEO Services for Small Business', href: '#' },
+            { label: 'Get Affordable SEO', href: '#' },
+            { label: 'Affordable SEO Guy', href: '#' },
+            { label: 'Affordable SEO Services', href: '#' },
+            { label: 'Affordable SEO Packages', href: '#' },
+          ].map((site) => (
+            <a
+              key={site.label}
+              href={site.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-navy-500 px-4 py-2 text-sm text-gray-300 transition-colors hover:border-gray-400 hover:text-white"
+            >
+              {site.label}
+            </a>
+          ))}
+        </div>
+        <p className="mt-4 text-xs text-gray-500">
+          Multiple sites. One core service. Built to help small businesses find
+          the right plan faster.
+        </p>
+      </div>
+
       <div className="mt-8 border-t border-navy-600 pt-8 text-center text-sm text-gray-400">
         <FooterCopyright />
       </div>
