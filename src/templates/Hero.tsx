@@ -14,7 +14,7 @@ const Hero = () => (
         </p>
 
         <h1 className="text-3xl font-bold leading-snug text-foreground sm:text-4xl sm:leading-tight md:text-5xl md:leading-hero">
-          SEO Services for Small Business
+          Affordable SEO Services for Small Business
           <br />
           <span className="text-accent">
             More Traffic. More Leads. More Revenue.
