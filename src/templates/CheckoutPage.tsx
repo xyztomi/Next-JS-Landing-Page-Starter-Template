@@ -26,12 +26,19 @@ const stripePromise = loadStripe(
 /* ------------------------------------------------------------------ */
 /*  Payment form rendered inside <Elements>                           */
 /* ------------------------------------------------------------------ */
-const PaymentForm = ({ price }: { price: string }) => {
+const PaymentForm = ({
+  price,
+  clientSecret,
+}: {
+  price: string;
+  clientSecret: string;
+}) => {
   const stripe = useStripe();
   const elements = useElements();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [name, setName] = useState('');
+  const [company, setCompany] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
 
@@ -42,6 +49,14 @@ const PaymentForm = ({ price }: { price: string }) => {
 
       setLoading(true);
       setError(null);
+
+      // Attach company name & phone to payment intent metadata
+      const piId = clientSecret.split('_secret_')[0] ?? '';
+      await fetch('/api/update-payment-intent', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ paymentIntentId: piId, company, phone }),
+      });
 
       const { error: confirmError } = await stripe.confirmPayment({
         elements,
@@ -65,7 +80,7 @@ const PaymentForm = ({ price }: { price: string }) => {
       }
       setLoading(false);
     },
-    [stripe, elements, name, email, phone],
+    [stripe, elements, clientSecret, name, company, email, phone],
   );
 
   return (
@@ -85,6 +100,23 @@ const PaymentForm = ({ price }: { price: string }) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="John Smith"
+            className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="company"
+            className="mb-1 block text-sm font-medium text-foreground"
+          >
+            Company Name
+          </label>
+          <input
+            id="company"
+            type="text"
+            required
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+            placeholder="Acme Inc."
             className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
           />
         </div>
@@ -263,7 +295,10 @@ const CheckoutWithPlan = ({
 
                   {clientSecret && (
                     <Elements stripe={stripePromise} options={{ clientSecret }}>
-                      <PaymentForm price={plan.price} />
+                      <PaymentForm
+                        price={plan.price}
+                        clientSecret={clientSecret}
+                      />
                     </Elements>
                   )}
                 </CardContent>
