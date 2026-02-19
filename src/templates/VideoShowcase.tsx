@@ -1,20 +1,24 @@
 import Script from 'next/script';
 
 const VideoShowcase = () => (
-  <div className="bg-gradient-to-b from-navy-900 to-navy-800">
-    <div className="mx-auto max-w-screen-lg px-4 py-12 sm:px-6 md:py-20">
+  <section className="relative overflow-hidden bg-white">
+    {/* Subtle top accent line */}
+    <div className="h-px w-full bg-gradient-to-r from-transparent via-accent to-transparent" />
+
+    <div className="mx-auto max-w-screen-lg px-4 py-10 sm:px-6 md:py-16">
       <div className="mb-8 text-center md:mb-12">
-        <div className="mx-auto mb-6 h-1 w-12 rounded-full bg-accent" />
-        <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+        <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-accent" />
+        <h2 className="text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
           Inside Our SEO Growth Engine
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-base text-navy-300 sm:text-lg md:mt-4 md:text-xl">
+        <p className="mx-auto mt-3 max-w-2xl text-base text-muted-foreground sm:text-lg md:mt-4 md:text-xl">
           See How We Turn Search Traffic Into Qualified Leads for Small
           Businesses Like Yours
         </p>
       </div>
 
-      <div className="overflow-hidden rounded-lg shadow-2xl shadow-accent/20 ring-1 ring-white/10 sm:rounded-xl">
+      {/* Video container with soft shadow and border */}
+      <div className="overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-lg">
         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
           <iframe
             src="https://player.vimeo.com/video/1166403527?badge=0&autopause=0&player_id=0&app_id=58479&portrait=0&byline=0&title=0"
@@ -31,7 +35,7 @@ const VideoShowcase = () => (
       src="https://player.vimeo.com/api/player.js"
       strategy="lazyOnload"
     />
-  </div>
+  </section>
 );
 
 export { VideoShowcase };
