@@ -17,6 +17,7 @@ import { HowItWorks } from './HowItWorks';
 import { PricingPreview } from './PricingPreview';
 import { Testimonials } from './Testimonials';
 import { TrustBar } from './TrustBar';
+import { VideoShowcase } from './VideoShowcase';
 
 const homeReviews = [
   {
@@ -60,6 +61,7 @@ const Base = (props: IBaseProps) => (
     <TrustBar />
     <HomeServices />
     <HowItWorks />
+    <VideoShowcase />
     <PricingPreview />
     <Testimonials />
     <FAQ />
