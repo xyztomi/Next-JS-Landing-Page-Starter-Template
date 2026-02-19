@@ -17,7 +17,7 @@ const VideoShowcase = () => (
       <div className="overflow-hidden rounded-lg shadow-2xl shadow-accent/20 ring-1 ring-white/10 sm:rounded-xl">
         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
           <iframe
-            src="https://player.vimeo.com/video/1166403527?badge=0&autopause=0&player_id=0&app_id=58479"
+            src="https://player.vimeo.com/video/1166403527?badge=0&autopause=0&player_id=0&app_id=58479&portrait=0&byline=0&title=0"
             className="absolute inset-0 size-full"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
